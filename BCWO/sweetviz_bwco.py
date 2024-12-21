@@ -2,7 +2,7 @@
 import pandas as pd
 from ydata_profiling import ProfileReport
 
-df = pd.read_csv(r'./bcwo.data',sep=',',header=None)
+df = pd.read_csv(r'C:\Users\amitv\Documents\Python_Scripts\EDA\BCWO\bcwo.data',sep=',',header=None)
 df.columns = ['Sample_No','Clump_Thickness','U_Cell_Size','U_Cell_Shape','Marginal_Adhesion','Single_cell_Size','Bare_Nuclei','Bland_Chromatin','Normal_Nucleoli','Mitoses','Class']
 
 df['Bare_Nuclei'] = pd.to_numeric(df['Bare_Nuclei'], errors='coerce')
